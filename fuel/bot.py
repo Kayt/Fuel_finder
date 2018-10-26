@@ -28,6 +28,16 @@ def find_fuel(location, data):
             else:
                 result.append(["Fuel Station: "+data[0] + "\n" + "Fuel Type: " +data[2] + "\n"  + "Queue Length: " + data[4] + "\n" + "Location: " + data[5]+ " "+data[6] + "\n "])
 
+        elif location.lower() in data[6].lower():
+            if data[2]=='':
+                data[2] ="TBC"
+            elif data[4]=='':
+                data[4] ="TBC"
+
+            else:
+                result.append(["Fuel Station: "+data[0] + "\n" + "Fuel Type: " +data[2] + "\n"  + "Queue Length: " + data[4] + "\n" + "Location: " + data[5]+ " "+data[6] + "\n "])
+
+
     return result
 
 
