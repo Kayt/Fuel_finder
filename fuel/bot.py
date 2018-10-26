@@ -149,14 +149,11 @@ class Bot(object):
             print("**************************{}************************".format(command_args))
 
             if command_args[0] == "pakaipa":
-                message = """
-                    Usatye!
-
-                    Intelli Africa Solutions has created me to help you find the closest fuel station to your current location over the weekend. 
+                msg1 = "Usatye! \n\n"
+                msg2 = "Intelli Africa Solutions has created me to help you find the closest fuel station to your current location over the weekend. \n\n"
+                msg3 = "Please TEXT your current neighbourhood or surburb and I will get back to you shortly.... \n "
+                message = msg1 + msg2 + msg3
                     
-                    Please TEXT your current neighbourhood or surburb and I will get back to you shortly....
-
-                    """
                 send_message(message)
 
             elif command_args[0] in ["thank you", "maita basa", "tatenda", "siyabonga", "thanx", "thanks", "merci"]:
