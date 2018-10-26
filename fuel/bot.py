@@ -154,8 +154,8 @@ class Bot(object):
 
                     Intelli Africa Solutions has created me to help you find the closest fuel station to your current location over the weekend. 
                     
-                    Please TEXT your current neighbourhood or surburb and i will get back to you shortly....
-                    
+                    Please TEXT your current neighbourhood or surburb and I will get back to you shortly....
+
                     """
                 send_message(message)
 
