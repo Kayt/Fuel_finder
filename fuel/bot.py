@@ -162,20 +162,15 @@ class Bot(object):
             else:
                 print("i got in here")
                 message = find_fuel(command_args[0], "data.csv")
-<<<<<<< HEAD
-
-                for item in message:
-                    print("**********************************{}*************************".format(item[0]))
-                    send_message(item[0])
-=======
                 if len(message) == 0:
                     message = "Sorry i ddn't quite catch that, may you send me your current surburb or neighbourhood..."
                     send_message(message)
                 else:
                     print("**********************************{}*************************".format(message))
-                    message = message + " /n Thank you for using our service. Contact Intelli Africa Solutions for your any software needs at www.intelliafricasolutions.com"
-                    send_message(str(message))
->>>>>>> 2d3a20b560c13ed9261779aea84aba7345d8fea8
+                    for item in message:
+                        message = item[0]
+                        send_message(str(message))
+                    send_message("Thank you for using our service. Contact Intelli Africa Solutions for your any software needs at www.intelliafricasolutions.com")
 
                    
 
