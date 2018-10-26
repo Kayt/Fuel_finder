@@ -15,10 +15,17 @@ from selenium.webdriver.common.by import By
 from . import driver
 from .helper_functions import send_message, chat_history, whatsapp_contacts, is_action_message, get_unread, get_last_message
 
+            
+msg_appreciation = ["thank you", "maita basa", "tatenda", "siyabonga", "thanx", "thanks", "merci"]
+
+
 def find_fuel(location, data):
     reader = csv.reader(open(data, 'r'))
     result = list()
+
+       
     for data in reader:
+        
         if location.lower() in data[0].lower():
             if data[2]=='':
                 data[2] ="TBC"
@@ -171,10 +178,12 @@ class Bot(object):
                 message = msg1 + msg2 + msg3
                 send_message(message)
 
-            elif command_args[0] in ["thank you", "maita basa", "tatenda", "siyabonga", "thanx", "thanks", "merci"]:
+
+            elif command_args[0] in msg_appreciation:
                 message = "No problem, I hope I was useful. For all your software needs, kindly contact us at www.intelliafricasolutions.com"
                 send_message(message)
 
+           
             elif command_args[0] in ["hi", "hie", "Hello", "hey"]:
                 message = "Please TEXT your current neighbourhood and I will get back to you shortly...."
                 send_message(message)
