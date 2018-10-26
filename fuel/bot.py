@@ -154,7 +154,7 @@ class Bot(object):
 
                     Intelli Africa Solutions has created me to help you find the closest fuel station to your current location over the weekend. 
                     
-                    Please TEXT your current neighbourhood or surburb and I will get back to you shortly....
+                    Please TEXT your current neighbourhood and I will get back to you shortly....
 
                     """
                 send_message(message)
@@ -163,11 +163,15 @@ class Bot(object):
                 message = "No problem, I hope I was useful. For all your software needs, kindly contact us at info@intelliafrica.solutions"
                 send_message(message)
 
+            elif command_args[0] in ["hi", "hie", "Hello"]:
+                message = "Please TEXT your current neighbourhood and I will get back to you shortly...."
+                send_message(message)
+
             else:
                 print("i got in here")
                 message = find_fuel(command_args[0], "data.csv")
                 if len(message) == 0:
-                    message = "Sorry i ddn't quite catch that, may you send me your current suburb or neighbourhood..."
+                    message = "Sorry I ddn't quite catch that, Or there is no fuel station with fuel in your current neighbourhood. Try another neighbourhood.."
                     send_message(message)
                 else:
                     print("**********************************{}*************************".format(message))
