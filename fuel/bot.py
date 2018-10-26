@@ -192,7 +192,7 @@ class Bot(object):
                 print("i got in here")
                 message = find_fuel(command_args[0], "data.csv")
                 if len(message) == 0:
-                    message = "Sorry I ddn't quite catch that, Or there is no fuel station with fuel in your current neighbourhood. Try another neighbourhood.."
+                    message = "Sorry nothing in that area , try another neighbourhood.."
                     send_message(message)
                 else:
                     print("**********************************{}*************************".format(message))
