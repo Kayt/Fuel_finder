@@ -147,15 +147,27 @@ class Bot(object):
             logging.debug("Command args: {cmd}".format(cmd=command_args))
             print("**************************{}************************".format(command_args))
 
-            if command_args[0] in ["hi", "pakaipa", "ma1", "hello", "ndeipi", "zvirisei", "pashata"]:
-                message = "Please tell me where you are and i will send you the nearest fuel station location"
+            if command_args[0] == "pakaipa":
+                message = """
+                    Usatye! Intelli Africa Solutions has created me to help you find the closest fuel station to your current location over the weekend. 
+                    Please TEXT your current neighbourhood or surburb and i will get back to you shortly....
+                    """
+                send_message(message)
+
+            elif command_args[0] in ["thank you", "maita basa", "tatenda", "siyabonga", "thanx", "thanks", "merci"]:
+                message = "No problem, i hope i was useful. For any software software needs kindly contact us at www.intelliafricasolutions.com"
                 send_message(message)
 
             else:
                 print("i got in here")
                 message = find_fuel(command_args[0], "data.csv")
-                print("**********************************{}*************************".format(message))
-                send_message(str(message))
+                if len(message) == 0:
+                    message = "Sorry i ddn't quite catch that, may you send me your current surburb or neighbourhood..."
+                    send_message(message)
+                else:
+                    print("**********************************{}*************************".format(message))
+                    message = message + " /n Thank you for using our service. Contact Intelli Africa Solutions for your any software needs at www.intelliafricasolutions.com"
+                    send_message(str(message))
 
                    
 
