@@ -151,7 +151,7 @@ class Bot(object):
             if command_args[0] == "pakaipa":
                 message = """
                     Usatye!
-                    
+
                     Intelli Africa Solutions has created me to help you find the closest fuel station to your current location over the weekend. 
                     
                     Please TEXT your current neighbourhood or surburb and i will get back to you shortly....
@@ -159,7 +159,7 @@ class Bot(object):
                 send_message(message)
 
             elif command_args[0] in ["thank you", "maita basa", "tatenda", "siyabonga", "thanx", "thanks", "merci"]:
-                message = "No problem, i hope i was useful. For any software software needs kindly contact us at www.intelliafricasolutions.com"
+                message = "No problem, I hope I was useful. For all your software needs, kindly contact us at info@intelliafrica.solutions"
                 send_message(message)
 
             else:
