@@ -159,25 +159,28 @@ class Bot(object):
                 msg2 = "Intelli Africa Solutions has created me to help you find the closest fuel station to your current location over the weekend. \n\n"
                 msg3 = "Please TEXT your current neighbourhood or surburb and I will get back to you shortly.... \n "
                 message = msg1 + msg2 + msg3
-                    
                 send_message(message)
 
             elif command_args[0] in ["thank you", "maita basa", "tatenda", "siyabonga", "thanx", "thanks", "merci"]:
                 message = "No problem, I hope I was useful. For all your software needs, kindly contact us at www.intelliafricasolutions.com"
                 send_message(message)
 
+            elif command_args[0] in ["hi", "hie", "Hello", "hey"]:
+                message = "Please TEXT your current neighbourhood and I will get back to you shortly...."
+                send_message(message)
+
             else:
                 print("i got in here")
                 message = find_fuel(command_args[0], "data.csv")
                 if len(message) == 0:
-                    message = "Sorry I ddn't quite catch that, may you send me your current suburb or neighbourhood..."
+                    message = "Sorry I ddn't quite catch that, Or there is no fuel station with fuel in your current neighbourhood. Try another neighbourhood.."
                     send_message(message)
                 else:
                     print("**********************************{}*************************".format(message))
                     for item in message:
                         message = item[0]
                         send_message(str(message + '\n '))
-                    send_message("Thank you for using our service. This service runs from 9-5. Contact Intelli Africa Solutions for your any software needs at www.intelliafricasolutions.com")
+                    send_message("Thank you for using our service. This service runs from 9am to 5pm. Contact Intelli Africa Solutions for your any software needs at www.intelliafricasolutions.com")
 
                    
 
