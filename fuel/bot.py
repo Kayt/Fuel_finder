@@ -20,7 +20,7 @@ def find_fuel(location, data):
     result = list()
     for data in reader:
         if location.lower() in data[0].lower():
-            result.append(["Fuel Station: "+data[0] + " " + "Fuel Type: " +data[2] + "\n " + "Payment:" + data[3] + "\n " + "Queue Length: " + data[4] + "\n" + "Location: " + data[5]+data[6]+"\n "])
+            result.append(["Fuel Station: "+data[0] + " " + "Fuel Type: " +data[2] + "\n"  + "Queue Length: " + data[4] + "\n" + "Location: " + data[5]+data[6] + "\n "])
 
     return result
 
@@ -149,14 +149,10 @@ class Bot(object):
             print("**************************{}************************".format(command_args))
 
             if command_args[0] == "pakaipa":
-                message = """
-                    Usatye!
-
-                    Intelli Africa Solutions has created me to help you find the closest fuel station to your current location over the weekend. 
-                    
-                    Please TEXT your current neighbourhood and I will get back to you shortly....
-
-                    """
+                msg1 = "Usatye! \n\n"
+                msg2 = "Intelli Africa Solutions has created me to help you find the closest fuel station to your current location over the weekend. \n\n"
+                msg3 = "Please TEXT your current neighbourhood or surburb and I will get back to you shortly.... \n "
+                message = msg1 + msg2 + msg3
                 send_message(message)
 
             elif command_args[0] in ["thank you", "maita basa", "tatenda", "siyabonga", "thanx", "thanks", "merci"]:
