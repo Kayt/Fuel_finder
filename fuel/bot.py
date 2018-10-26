@@ -20,7 +20,7 @@ def find_fuel(location, data):
     result = list()
     for data in reader:
         if location.lower() in data[0].lower():
-            result.append(["Fuel Station: "+data[0] + " " + "Fuel Type: " +data[2] + "\n" + "Location: " + data[5]+data[6] + "\n "])
+            result.append(["Fuel Station: "+data[0] + " " + "Fuel Type: " +data[2] + "\n"  + "Queue Length: " + data[4] + "\n" + "Location: " + data[5]+data[6] + "\n "])
 
     return result
 
