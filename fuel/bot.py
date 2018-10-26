@@ -20,7 +20,7 @@ def find_fuel(location, data):
     result = list()
     for data in reader:
         if location.lower() in data[0].lower():
-            result.append(["Fuel Station: "+data[0] + " " + "Fuel Type: " +data[2] + "\n " + "Payment:" + data[3] + "\n " + "Queue Length: " + data[4] + "\n" + "Location: " + data[5]+data[6]+"\n"])
+            result.append(["Fuel Station: "+data[0] + " " + "Fuel Type: " +data[2] + "\n " + "Payment:" + data[3] + "\n " + "Queue Length: " + data[4] + "\n" + "Location: " + data[5]+data[6]+"\n "])
 
     return result
 
@@ -150,16 +150,12 @@ class Bot(object):
 
             if command_args[0] == "pakaipa":
                 message = """
-<<<<<<< HEAD
-                    Usatye! Intelli Africa Solutions has created me to help you find the closest fuel station to your current location over the weekend. 
-                    Please TEXT your current neighbourhood or suburb and i will get back to you shortly....
-=======
                     Usatye!
 
                     Intelli Africa Solutions has created me to help you find the closest fuel station to your current location over the weekend. 
                     
                     Please TEXT your current neighbourhood or surburb and i will get back to you shortly....
->>>>>>> 30f6a7c55d0368a8fc29df44f6099fc2bd442aaf
+                    
                     """
                 send_message(message)
 
@@ -177,7 +173,7 @@ class Bot(object):
                     print("**********************************{}*************************".format(message))
                     for item in message:
                         message = item[0]
-                        send_message(str(message))
+                        send_message(str(message + '\n '))
                     send_message("Thank you for using our service. Contact Intelli Africa Solutions for your any software needs at www.intelliafricasolutions.com")
 
                    
