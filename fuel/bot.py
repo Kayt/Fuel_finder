@@ -20,7 +20,13 @@ def find_fuel(location, data):
     result = list()
     for data in reader:
         if location.lower() in data[0].lower():
-            result.append(["Fuel Station: "+data[0] + " " + "Fuel Type: " +data[2] + "\n"  + "Queue Length: " + data[4] + "\n" + "Location: " + data[5]+data[6] + "\n "])
+            if data[2] is None:
+                data[2] ="TBC"
+            elif data[4] is None:
+                data[4] ="TBC"
+
+            else:
+                result.append(["Fuel Station: "+data[0] + " " + "Fuel Type: " +data[2] + "\n"  + "Queue Length: " + data[4] + "\n" + "Location: " + data[5]+data[6] + "\n "])
 
     return result
 
@@ -157,7 +163,7 @@ class Bot(object):
                 send_message(message)
 
             elif command_args[0] in ["thank you", "maita basa", "tatenda", "siyabonga", "thanx", "thanks", "merci"]:
-                message = "No problem, I hope I was useful. For all your software needs, kindly contact us at info@intelliafrica.solutions"
+                message = "No problem, I hope I was useful. For all your software needs, kindly contact us at www.intelliafricasolutions.com"
                 send_message(message)
 
             else:
