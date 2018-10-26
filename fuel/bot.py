@@ -150,7 +150,10 @@ class Bot(object):
 
             if command_args[0] == "pakaipa":
                 message = """
-                    Usatye! Intelli Africa Solutions has created me to help you find the closest fuel station to your current location over the weekend. 
+                    Usatye!
+                    
+                    Intelli Africa Solutions has created me to help you find the closest fuel station to your current location over the weekend. 
+                    
                     Please TEXT your current neighbourhood or surburb and i will get back to you shortly....
                     """
                 send_message(message)
