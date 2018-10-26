@@ -174,7 +174,7 @@ class Bot(object):
                     for item in message:
                         message = item[0]
                         send_message(str(message + '\n '))
-                    send_message("Thank you for using our service. Contact Intelli Africa Solutions for your any software needs at www.intelliafricasolutions.com")
+                    send_message("Thank you for using our service. This service runs from 9-5. Contact Intelli Africa Solutions for your any software needs at www.intelliafricasolutions.com")
 
                    
 
