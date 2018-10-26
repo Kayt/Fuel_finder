@@ -22,7 +22,7 @@ def find_fuel(location, data):
         if location.lower() in data[0].lower():
             result.append(["Location: "+data[0] + " " + data[2] + "\n " + "Payment:" + data[3] + "\n " + "Fuel Type: " + data[4] + "\n" + "Queue: " + data[5]])
 
-        return result
+    return result
 
 
 class BotConfig(object):
@@ -151,7 +151,7 @@ class Bot(object):
             if command_args[0] == "pakaipa":
                 message = """
                     Usatye! Intelli Africa Solutions has created me to help you find the closest fuel station to your current location over the weekend. 
-                    Please TEXT your current neighbourhood or surburb and i will get back to you shortly....
+                    Please TEXT your current neighbourhood or suburb and i will get back to you shortly....
                     """
                 send_message(message)
 
@@ -163,7 +163,7 @@ class Bot(object):
                 print("i got in here")
                 message = find_fuel(command_args[0], "data.csv")
                 if len(message) == 0:
-                    message = "Sorry i ddn't quite catch that, may you send me your current surburb or neighbourhood..."
+                    message = "Sorry i ddn't quite catch that, may you send me your current suburb or neighbourhood..."
                     send_message(message)
                 else:
                     print("**********************************{}*************************".format(message))

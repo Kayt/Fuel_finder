@@ -1,11 +1,20 @@
 ﻿Fuel Station Name,Date/Time,Petrol/Diesel/Gas,Payment,Queue,Road,Suburb,Station,City,Date,Time
-HRE Total Westgate,26/10/2018 09:35,Diesel,All,Growing,Lomangandi Rd,Westgate,Total,Harare,26/10/2018,09:35
+HRE Zuva The Grange,26/0/2018 12:12,Petrol,,,,The Grange,Zuva,Harare,26/10/2018,12:12
+HRE Total Chisipite (24hr),26/10/2018 12:11,,,Fuel finished,Enterprise Rd,Chisipite,Total,Harare,26/10/2018,12:11
+HRE Zuva Helensvale (24hr),26/10/2018 11:30,Petrol,Everyone/Swipe,Queue +/-50 cars,Borrowdale Rd,Helensvale,Zuva,Harare,26/10/2018,11:30
+HRE Total Avondale (24hr),26/10/2018 11:05,"Petrol,Diesel",Everyone/Swipe,Fuel has been delivered ,King George Rd,Avondale,Total,Harare,26/10/2018,11:05
+HRE Total Emerald Hill,26/10/2018 11:05,Diesel,All payment methods,20l per vehicle or Gerry can,Golden Stairs,Emerald Hill,Total,Harare,26/10/2018,11:05
+HRE Total Simon Mazorodze,26/10/2018 11:00,Diesel,Everyone/Swipe,Fuel has been delivered ,Simon Mazorodze Rd (Mbudzi roundabout),Harare,Total,Harare,26/10/2018,11:00
+HRE Total Simon Mazorodze ,26/10/2018 11:00,Diesel,Everyone/Swipe,Fuel has been delivered ,Simon Mazorodze Rd close to Nazerreth Hospital,Harare,Total,Harare,26/10/2018,11:00
+HRE Total Samora (24hr),26/10/2018 10:42,Petrol,Everyone/Swipe,+/-40,Samora Machel Rd,Harare,Total,Harare,26/10/2018,10:42
+HRE Zuva Pomona,26/10/2018 10:25,"Petrol,Diesel",All payment methods accepted.,,,Pomona,Zuva,Harare,26/10/2018,10:25
+HRE Total Westgate,26/10/2018 11:00,"Diesel,Petrol",All,Fuel has been delivered ,Lomangandi Rd,Westgate,Total,Harare,26/10/2018,09:35
 HRE Zuva Sherwood,26/10/2018 09:15,Diesel,Everyone/Swipe,,Sherwood Dr,Meyrick Park,Zuva,Harare,26/10/2018,09:15
+HRE ZX Fuels Umwinzidale,26/10/2018 09:15,Petrol,Swipe/Cash,No queue. More petrol&diesel expected during the day,,Umwinzidale,ZX Fuels,Harare,26/10/2018,09:15
 HRE Trek Pomona,26/10/2018 08:47,"Petrol,Diesel",Diesel to all,,Harare Dr,Pomona,Trek,Harare,26/10/2018,08:47
 HRE Puma Lytton,25/10/2018 08:47,Petrol,all,,Lytton Rd,Workington,Puma,Harare,26/10/2018,08:47
 HRE Zuva Kamfinsa,26/10/2018 08:45,Diesel,Everyone/Swipe,Just received,Arcturus Rd,Kamfinsa,Zuva,Harare,26/10/2018,08:45
 HRE Puma Lewisam,26/10/2018 08:25,Petrol,Everyone/Swipe,"Orderl, moving fast",Enterprise Rd,Lewisam,Puma,Harare,26/10/2018,08:25
-HRE ZX Fuels Umwinzidale,26/10/2018 09:15,Petrol,Swipe/Cash,No queue. More petrol&diesel expected during the day,,Umwinzidale,ZX Fuels,Harare,26/10/2018,09:15
 HRE Zuva Belgravia (24hr),26/10/2018 08:22,Diesel,,Long queue,Churchill/Second Street,Belgravia,Zuva,Harare,26/10/2018,08:22
 HRE Petrotrade Park St,26/10/2018 07:33,Diesel,Everyone/Swipe,Short queue,Park St/Mandela,Harare,Petrotrade,Harare,26/10/2018,07:33
 HRE Trek Avondale,26/10/2018 07:30,Petrol,For all,No queue,King George Rd,Avondale,Trek,Harare,26/10/2018,07:30
@@ -25,9 +34,7 @@ HRE Trek Samora,26/10/2018 06:55,"Petrol,Diesel","Petrol all, diesel cardholders
 BYO Trek Fort St (24hr),26/10/2018 06:55,"Petrol,Diesel",Cardholders only,,Fort St,Bulawayo,Trek,Bulawayo,26/10/2018,06:55
 HRE Trek Cripps,26/10/2018 06:53,"Petrol,Diesel","Petrol all, diesel cardholders",,Cripps Rd,Graniteside,Trek,Harare,26/10/2018,06:53
 HRE Trek Runiville,26/10/2018 06:51,"Petrol,Diesel",Cardholders only,,Glenroy Crescent/Glenara Road,Highlands,Trek,Harare,26/10/2018,06:51
-HRE Total Chisipite (24hr),26/10/2018 06:35,"Petrol,Diesel",,Offloading,Enterprise Rd,Chisipite,Total,Harare,26/10/2018,06:35
 HRE Puma Ashbrittle,26/10/2018 06:32,Petrol,Everyone/Swipe,Offloading,Golden Stairs,Ashbrittle,Puma,Harare,26/10/2018,06:32
-HRE Total Emerald Hill,26/10/2018 06:12,Diesel,All payment methods,Offloading,Golden Stairs,Emerald Hill,Total,Harare,26/10/2018,06:12
 HRE Puma Glenara (24hr),25/10/2018 20:10,Petrol,Everyone/Swipe (no ecocash),20 cars,Glenara Ave,Highlands,Puma,Harare,25/10/2018,20:10
 HRE Zuva Piers,25/10/2018 19:01,Petrol,,Queue about 1.5 hours,Piers Rd,Borrowdale,Zuva,Harare,25/10/2018,19:01
 HRE Zuva Mabelreign,25/10/2018 18:30,Diesel,Everyone,Tanker offloading,Sherwood Dr,Mabelreign,Zuva,Harare,25/10/2018,18:30
@@ -65,9 +72,7 @@ BYO Puma Main St.,25/10/2018 10:54,,,,Main St./5th,Bulawayo,Puma,Bulawayo,25/10/
 HRE Puma Westgate,25/10/2018 10:53,Diesel,,,Westgate complex,Westgate,Puma,Harare,25/10/2018,10:53
 HRE Puma Bond,25/10/2018 12:40,Diesel,,Long,The Chase,Mount Pleasant,Puma,Harare,25/10/2018,10:52
 HRE Puma Second St/Kwame,25/10/2018 10:50,Diesel,Everyone/Swipe/Ecocash,,Second Street/Kwame Nkrumah,Harare,Puma,Harare,25/10/2018,10:51
-HRE Zuva Pomona,25/10/2018 10:49,"Petrol,Diesel",All payment methods accepted.,"Diesel offloading, queue long",,Pomona,Zuva,Harare,25/10/2018,10:49
 HRE Puma Samora/7th (24hr),25/10/2018 10:49,"Petrol,Diesel",,,Samora Machel/7th Street,Harare,Puma,Harare,25/10/2018,10:49
-HRE Zuva Helensvale (24hr),25/10/2018 10:48,Petrol,Everyone/Swipe,Short queue ,Borrowdale Rd,Helensvale,Zuva,Harare,25/10/2018,10:48
 HRE Puma Mabelreign,25/10/2018 10:47,,Everyone/Swipe,,Sherwood Dr,Mabelreign,Puma,Harare,25/10/2018,10:48
 HRE Puma Chadcombe,25/10/2018 10:47,,Everyone/Swipe,,Chiremba Rd,Chadcombe,Puma,Harare,25/10/2018,10:47
 HRE Puma Rhodesville,25/10/2018 10:45,"Petrol,Diesel",Everyone/Swipe,Long,Rhodesville Ave,Greendale,Puma,Harare,25/10/2018,10:45
@@ -81,7 +86,6 @@ HRE Total Kensington,25/10/2018 08:51,Petrol,,Queue but not yet serving,Connaugh
 HRE Zuva Marimba,25/10/2018 08:44,Diesel,Everyone/Swipe,"Offloading, 30 car queue",Samora Machel Rd,Belvedere,Zuva,Harare,25/10/2018,08:44
 HRE Petrotrade Westlea,25/10/2018 08:43,"Diesel,Petrol",,,Bulawayo Rd,Westlea,Petrotrade,Harare,25/10/2018,08:43
 HRE Flo Tynwald,25/10/2018 08:42,Diesel,,"'+/-60 cars - (Limited to 30l/car, 200l/truck)",Tynwald Rd,Tynwald,Flo Petroleum,Harare,25/10/2018,08:42
-HRE Zuva The Grange,25/0/2018 08:16,,,,,The Grange,Zuva,Harare,25/10/2018,08:16
 BYO Zuva Romney Park,25/10/2018 8:01,Diesel,Cash/Ecocash,Short queue ,,Romney Park,Zuva,Bulawayo,25/10/2018,08:01
 HRE Zuva Blue Lagoon,25/10/2018 07:34,Petrol,All methods,,Lomangandi/West Rd,Emerald Hill,Zuva,Harare,25/10/2018,07:34
 HRE Engen Belvedere,25/10/2018 07:22,,,Ran out of diesel last night. The queue is a hopeful one.,,Belvedere,Engen,Harare,25/10/2018,07:22
@@ -118,10 +122,8 @@ ZVIS Total Zvishavane,23/10/2018 16:15,Diesel,Everyone/Swipe,,,Zvishavane,Total,
 ZVIS Pure Petroleum Zvishavane ,23/10/2018 16:15,Petrol,Everyone/Swipe,,,Zvishavane,Pure Petroleum,Zvishavane,23/10/2018,16:15
 HRE Zuva Coventry,23/10/2018  15:31,"Petrol,Diesel",Cardholders only,No queue,Coventry Rd,Workington,Zuva,Harare,23/10/2018,15:31
 HRE Zuva Southerton,23/10/2018 14:02,"Petrol,Gas",Everyone/Swipe,+/-20 cars,Gleneagles Rd,Southerton,Zuva,Harare,23/10/2018,14:02
-HRE Total Simon Mazorodze,23/10/2018 10:05,"Petrol,Diesel",Everyone/Swipe,+/-20 cars,Simon Mazorodze Rd,Harare,Total,Harare,23/10/2018,10:05
 HRE Engen Avondale,23/10/2018 17:25,Petrol,Everything ,Short queue ,King George Rd,Avondale,Engen,Harare,23/10/2018,09:49
-HRE Total Samora (24hr),23/10/2018 09:08,Petrol,Everyone/Swipe,Short queue,Samora Machel Rd,Harare,Total,Harare,23/10/2018,09:08
-Total Makomva,23/10/2018 09:07,Petrol,,,Glenview Way,Glenview,Total,Harare,23/10/2018,09:07
+Total Makomva,26/10/2018 12:12,Diesel,,,Glenview Way,Glenview,Total,Harare,23/10/2018,09:07
 GWANDA Engen,23/10/2018 08:02,Petrol,,,,Gwanda,Engen,Gwanda,23/10/2018,08:02
 HRE Total Nelson Mandela ,22/10/2018 19:26,Petrol,All methods,Long,"Nelson Mandela Ave, between 3rd/4th St",Harare,Total,Harare,22/10/2018,19:26
 HRE Total Belgravia (24hr),22/10/2018 18:47,"Petrol,Diesel",Everyone/Swipe,,Second Street/Churchill,Belgravia,Total,Harare,22/10/2018,18:47
@@ -154,7 +156,6 @@ BYO Nissan 6th,21/10/2018 08:23,Diesel,,,6th Avenue/Robert Mugabe Way,Bulawayo,N
 BYO Busuman Motors,21/10/2018 08:21,Petrol,Cash Only,,,Bulawayo,Busuman Motors,Bulawayo,21/10/2018,08:21
 BYO Zuva Max,21/10/2018 08:00,Petrol,Cash only,Reasonable queue,,Bulawayo,Zuva,Bulawayo,21/10/2018,08:00
 HRE Total Greencroft,21/10/2018 07:10,Petrol,Everyone/Swipe,,,Greencroft,Total,Harare,21/10/2018,07:10
-HRE Total Avondale (24hr),21/10/2018 04:27,"Petrol,Diesel",Everyone/Swipe,Allowing full tank,King George Rd,Avondale,Total,Harare,21/10/2018,04:27
 HRE Total Msasa Coronation,20/10/2018 19:20,"Diesel,Petrol",Everyone/Swipe,Short queue,Amby Dr,Msasa,Total,Harare,20/10/2018,19:20
 HRE Glow Waterfalls,20/10/2018 16:20,"Petrol,Diesel",All,,,Waterfalls,Glow,Harare,20/10/2018,16:20
 HRE Super Fuels Dzivaresekwa,20/10/2018 16:15,"Petrol,Diesel",Everyone,Long,Kirkman Rd at Nyamachoma,Dzivarasekwa,Super Fuels,Harare,20/10/2018,16:15
