@@ -39,7 +39,7 @@ Simple Commands
 
 def say_hi():
     print("Saying hi")
-    return "Hello i am the intelli bot developed by the good young team at Intelli-Africa"
+    return "Hello I am the intelli bot developed by the good young team at Intelli-Africa"
 
 
 """

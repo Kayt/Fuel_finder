@@ -20,8 +20,9 @@ def find_fuel(location, data):
     result = list()
     for data in reader:
         if location.lower() in data[0].lower():
-            result.append([data[0] + " " + data[2] + " " + data[3] + " " + data[4] + " " + data[5]])
-    return result
+            result.append(["Location: "+data[0] + " " + data[2] + "\n " + "Payment:" + data[3] + "\n " + "Fuel Type: " + data[4] + "\n" + "Queue: " + data[5]])
+
+        return result
 
 
 class BotConfig(object):
@@ -148,14 +149,16 @@ class Bot(object):
             print("**************************{}************************".format(command_args))
 
             if command_args[0] in ["hi", "pakaipa", "ma1", "hello", "ndeipi", "zvirisei", "pashata"]:
-                message = "Please tell me where you are and i will send you the nearest fuel station location"
+                message = "Please tell me where you are and I will send you the nearest fuel station location"
                 send_message(message)
 
             else:
                 print("i got in here")
                 message = find_fuel(command_args[0], "data.csv")
-                print("**********************************{}*************************".format(message))
-                send_message(str(message))
+
+                for item in message:
+                    print("**********************************{}*************************".format(item[0]))
+                    send_message(item[0])
 
                    
 
