@@ -20,9 +20,9 @@ def find_fuel(location, data):
     result = list()
     for data in reader:
         if location.lower() in data[0].lower():
-            if data[2] is None:
+            if data[2]=='':
                 data[2] ="TBC"
-            elif data[4] is None:
+            elif data[4]=='':
                 data[4] ="TBC"
 
             else:
