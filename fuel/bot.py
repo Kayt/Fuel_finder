@@ -185,6 +185,10 @@ class Bot(object):
                 message = "No problem, I hope I was useful. For all your software needs, kindly contact us at www.intelliafricasolutions.com"
                 send_message(message)
 
+            elif command_args[0] in ['Harare','Gweru','Mutare','Bulawayo','Chiredzi','Masvingo']:
+                message = "Kindly specify the area in your city e.g Avondale or Mount Pleasant"
+                send_message(message)
+
            
             elif command_args[0] in ["hi", "hie", "hello", "hey"]:
                 message = "Please TEXT your current neighbourhood and I will get back to you shortly...."
