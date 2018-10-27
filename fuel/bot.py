@@ -174,8 +174,10 @@ class Bot(object):
             if command_args[0] == "pakaipa":
                 msg1 = "Usatye! \n\n"
                 msg2 = "Intelli Africa Solutions has created me to help you find the closest fuel station to your current location over the weekend. \n\n"
-                msg3 = "Please TEXT your current neighbourhood or surburb and I will get back to you shortly.... \n "
-                message = msg1 + msg2 + msg3
+                msg3 = "Please TEXT your current neighbourhood or surburb and I will get back to you shortly.... \n \n"
+                msg3 = "DISCLAIMER ALERT!!!\n"
+                msg4 = "Please note that the information provided is not 100% accurate, we are doing our best to give you up to date information as gathered by our team close by or those queing for fuel. We are only trying to help those in need of assistance.... \n "
+                message = msg1 + msg2 + msg3 +msg4
                 send_message(message)
 
 
@@ -184,7 +186,7 @@ class Bot(object):
                 send_message(message)
 
            
-            elif command_args[0] in ["hi", "hie", "Hello", "hey"]:
+            elif command_args[0] in ["hi", "hie", "hello", "hey"]:
                 message = "Please TEXT your current neighbourhood and I will get back to you shortly...."
                 send_message(message)
 
@@ -192,14 +194,14 @@ class Bot(object):
                 print("i got in here")
                 message = find_fuel(command_args[0], "data.csv")
                 if len(message) == 0:
-                    message = "Sorry nothing in that area , try another neighbourhood.."
+                    message = "Sorry I have no information on that area, try another neighbourhood close to you.."
                     send_message(message)
                 else:
                     print("**********************************{}*************************".format(message))
                     for item in message:
                         message = item[0]
                         send_message(str(message + '\n '))
-                    send_message("Thank you for using our service. This service runs from 9am to 5pm. Contact Intelli Africa Solutions for your any software needs at www.intelliafricasolutions.com")
+                    send_message("Thank you for using our service. This service runs from 9am to 5pm. Contact Intelli Africa Solutions for your any software needs at www.intelliafricasolutions.com. I hope takuBatsirai")
 
                    
 
