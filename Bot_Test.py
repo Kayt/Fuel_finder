@@ -6,6 +6,23 @@ result1 = [["Fuel Station: "+data[0] + "\n" + "Fuel Type: " +data[2] + "\n"  + "
            ["Fuel Station: "+data[0] + "\n" + "Fuel Type: " +data[2] + "\n"  + "Queue Length: " + data[4] + "\n" + "Location: " + data[5]+ " "+data[6] + "\n "],
            ["Fuel Station: "+data[0] + "\n" + "Fuel Type: " +data[2] + "\n"  + "Queue Length: " + data[4] + "\n" + "Location: " + data[5]+ " "+data[6] + "\n "]]
 
+result2 = [["Fuel Station: "+data[0] + "\n" + "Fuel Type: " +data[2] + "\n"  + "Queue Length: " + data[4] + "\n" + "Location: " + data[5]+ " "+data[6] + "\n"],
+           ["Fuel Station: "+data[0] + "\n" + "Fuel Type: " +data[2] + "\n"  + "Queue Length: " + data[4] + "\n" + "Location: " + data[5]+ " "+data[6] + "\n "],
+           ["Fuel Station: "+data[0] + "\n" + "Fuel Type: " +data[2] + "\n"  + "Queue Length: " + data[4] + "\n" + "Location: " + data[5]+ " "+data[6] + "\n "],
+           ["Fuel Station: "+data[0] + "\n" + "Fuel Type: " +data[2] + "\n"  + "Queue Length: " + data[4] + "\n" + "Location: " + data[5]+ " "+data[6] + "\n "]]
+
+result3 = [["Fuel Station: "+data[0] + "\n" + "Fuel Type: " +data[2] + "\n"  + "Queue Length: " + data[4] + "\n" + "Location: " + data[5]+ " "+data[6] + "\n"],
+           ["Fuel Station: "+data[0] + "\n" + "Fuel Type: " +data[2] + "\n"  + "Queue Length: " + data[4] + "\n" + "Location: " + data[5]+ " "+data[6] + "\n "],
+           ["Fuel Station: "+data[0] + "\n" + "Fuel Type: " +data[2] + "\n"  + "Queue Length: " + data[4] + "\n" + "Location: " + data[5]+ " "+data[6] + "\n "],
+           ["Fuel Station: "+data[0] + "\n" + "Fuel Type: " +data[2] + "\n"  + "Queue Length: " + data[4] + "\n" + "Location: " + data[5]+ " "+data[6] + "\n "]]
+
+result = [["Fuel Station: "+data[0] + "\n" + "Fuel Type: " +data[2] + "\n"  + "Queue Length: " + data[4] + "\n" + "Location: " + data[5]+ " "+data[6] + "\n"],
+           ["Fuel Station: "+data[0] + "\n" + "Fuel Type: " +data[2] + "\n"  + "Queue Length: " + data[4] + "\n" + "Location: " + data[5]+ " "+data[6] + "\n "],
+           ["Fuel Station: "+data[0] + "\n" + "Fuel Type: " +data[2] + "\n"  + "Queue Length: " + data[4] + "\n" + "Location: " + data[5]+ " "+data[6] + "\n "],
+           ["Fuel Station: "+data[0] + "\n" + "Fuel Type: " +data[2] + "\n"  + "Queue Length: " + data[4] + "\n" + "Location: " + data[5]+ " "+data[6] + "\n "]]
+
+
+
 class BotTest(unittest.TestCase):
   def test_find_fuel(self):
     self.assertEqual(find_fuel('Mount Plesant', data), result1)
