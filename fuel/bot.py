@@ -3,6 +3,7 @@ import time
 import requests
 import logging
 import csv
+import arrow
 
 from time import sleep
 
@@ -18,7 +19,7 @@ from .helper_functions import send_message, chat_history, whatsapp_contacts, is_
             
 msg_appreciation = ["thank you", "maita basa", "tatenda", "siyabonga", "thanx", "thanks", "merci"]
 
-
+# This function gets the fuel stations at a particular location it takes in the location and the data set
 def find_fuel(location, data):
     reader = csv.reader(open(data, 'r'))
     result = list()
@@ -27,22 +28,24 @@ def find_fuel(location, data):
     for data in reader:
         
         if location.lower() in data[0].lower():
-            if data[2]=='':
-                data[2] ="TBC"
-            elif data[4]=='':
-                data[4] ="TBC"
+            if arrow.get(data[9], 'DD/MM/YYYY').date() == arrow.now().date():
+                if data[2]=='':
+                    data[2] ="TBC"
+                elif data[4]=='':
+                    data[4] ="TBC"
 
-            else:
-                result.append(["Fuel Station: "+data[0] + "\n" + "Fuel Type: " +data[2] + "\n"  + "Queue Length: " + data[4] + "\n" + "Location: " + data[5]+ " "+data[6] + "\n "])
+                else:
+                    result.append(["Fuel Station: "+data[0] + "\n" + "Fuel Type: " +data[2] + "\n"  + "Queue Length: " + data[4] + "\n" + "Location: " + data[5]+ " "+data[6] + "\n "])
 
         elif location.lower() in data[6].lower():
-            if data[2]=='':
-                data[2] ="TBC"
-            elif data[4]=='':
-                data[4] ="TBC"
+            if arrow.get(data[9], 'DD/MM/YYYY').date() == arrow.now().date():
+                if data[2]=='':
+                    data[2] ="TBC"
+                elif data[4]=='':
+                    data[4] ="TBC"
 
-            else:
-                result.append(["Fuel Station: "+data[0] + "\n" + "Fuel Type: " +data[2] + "\n"  + "Queue Length: " + data[4] + "\n" + "Location: " + data[5]+ " "+data[6] + "\n "])
+                else:
+                    result.append(["Fuel Station: "+data[0] + "\n" + "Fuel Type: " +data[2] + "\n"  + "Queue Length: " + data[4] + "\n" + "Location: " + data[5]+ " "+data[6] + "\n "])
 
 
     return result
