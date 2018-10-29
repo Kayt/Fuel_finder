@@ -31,6 +31,11 @@ class BotTest(unittest.TestCase):
     self.assertEqual(find_fuel('Avondale', testdata), result2)
     self.assertEqual(find_fuel('Glendale', testdata), result3)
     self.assertEqual(find_fuel('Mkoba', testdata), result4)
+      
+
+if __name__ == '__main__' :
+           unittest.main()
+           
     
     
     
