@@ -17,7 +17,7 @@ from . import driver
 from .helper_functions import send_message, chat_history, whatsapp_contacts, is_action_message, get_unread, get_last_message
 
             
-msg_appreciation = ["thank you", "maita basa", "tatenda", "siyabonga", "thanx", "thanks", "merci"]
+msg_appreciation = ["thank you", "maita basa", "tatenda", "siyabonga", "thnx", "thank yu", "thanx", "thanks", "merci"]
 
 # This function gets the fuel stations at a particular location it takes in the location and the data set
 def find_fuel(location, data):
@@ -176,16 +176,17 @@ class Bot(object):
 
             if command_args[0] == "pakaipa":
                 msg1 = "Usatye! \n\n"
-                msg2 = "Intelli Africa Solutions has created me to help you find the closest fuel station to your current location over the weekend. \n\n"
+                msg2 = "Intelli Africa Solutions has created me to help you find the closest fuel station to your current location. \n\n"
                 msg3 = "Please TEXT your current neighbourhood or surburb and I will get back to you shortly.... \n \n"
                 msg4 = "DISCLAIMER ALERT!!!\n"
                 msg5 = "Please note that the information provided is not 100% accurate, we are doing our best to give you up to date information as gathered by our team close by or those queing for fuel. We are only trying to help those in need of assistance.... \n "
-                message = msg1 + msg2 + msg3 +msg4 + msg5
+                msg6 = "MARKET WITH US! info@intelliafrica.solutions"
+                message = msg1 + msg2 + msg3 +msg4 + msg5 + msg6
                 send_message(message)
 
 
             elif command_args[0] in msg_appreciation:
-                message = "No problem, I hope I was useful. For all your software needs, kindly contact us at www.intelliafricasolutions.com"
+                message = "No problem, I hope I was useful. MARKET WITH US! info@intelliafrica.solutions"
                 send_message(message)
 
             elif command_args[0] in ['Harare','Gweru','Mutare','Bulawayo','Chiredzi','Masvingo']:
@@ -208,7 +209,7 @@ class Bot(object):
                     for item in message:
                         message = item[0]
                         send_message(str(message + '\n '))
-                    send_message("Thank you for using our service. This service runs from 9am to 5pm. Contact Intelli Africa Solutions for your any software needs at www.intelliafricasolutions.com. I hope takuBatsirai")
+                    send_message("Thank you for using our service. This service runs from 9am to 5pm. MARKET WITH US! info@intelliafrica.solutions ")
 
                    
 
