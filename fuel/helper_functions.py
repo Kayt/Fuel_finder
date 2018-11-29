@@ -120,7 +120,45 @@ def send_message(msg):
         action.send_keys(Keys.ENTER)
         action.perform()
 
+def send_video(msg):
+    # a = "Choose any one of the below options: \n1.See my account balance\n2.See my recent transactions\n3.Make a payment\n4.Buy data\n6.Pay biller"
+    # input_box = driver.find_element_by_class_name('_2S1VP')
+
+    # select correct input box to type msg
+    input_box = driver.find_element(
+        By.XPATH, '//*[@id="main"]//footer//div[contains(@contenteditable, "true")]')
+    # input_box.clear()
+    input_box.click()
+
+    # print(msg)
+
+    # print(type(msg))
+
+    if '\n' in msg:
+        msgresult = msg.splitlines()
+        # logging.warning("-------------------------------------{}------------------------".format(msgresult))
+
+        for n in msgresult:
+            # print(n)
+            action = ActionChains(driver)
+            action.send_keys(n)
+            action.send_keys(Keys.SHIFT).send_keys(
+                Keys.ENTER).send_keys(Keys.SHIFT)
+            # action.send_keys(Keys.RETURN)
+            action.perform()
+        action.send_keys(Keys.ENTER)
+        time.sleep(5)
+        action.perform()
+    else:
+        action = ActionChains(driver)
+        action.send_keys(msg)
+        action.send_keys(Keys.ENTER)
+        time.sleep(5)
+        action.perform()
+
 # Get all the contacts
+
+
 
 
 def whatsapp_contacts():
